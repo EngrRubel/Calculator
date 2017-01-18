@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp16"
+    android:weightSum="6"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.jkkniugmail.rubel.calculator.MainActivity">
+
+    <TextView
+        android:text="@string/_0"
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:textSize="@dimen/sp30"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        style="@style/btnStyleArsenic"
+        android:paddingRight="@dimen/dp16"
+        android:paddingLeft="@dimen/dp16"
+        android:gravity="end|center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_7"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn7"
+            android:onClick="draw7" />
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_8"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn8"
+            android:onClick="draw8"/>
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/_9"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn9"
+            android:onClick="draw9"/>
+
+        <Button
+            style="@style/btnStyleGenoa"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/div"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btnDiv"
+            android:onClick="drawDivisor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn4"
+            android:onClick="draw4"/>
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn5"
+            android:onClick="draw5"/>
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn6"
+            android:onClick="draw6"/>
+
+        <Button
+            style="@style/btnStyleGenoa"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btnMulti"
+            android:onClick="drawMultiply"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn1"
+            android:onClick="draw1"/>
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn2"
+            android:onClick="draw2"/>
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn3"
+            android:onClick="draw3"/>
+
+        <Button
+            style="@style/btnStyleGenoa"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btnMinus"
+            android:onClick="drawMinus"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btn0"
+            android:onClick="draw0"/>
+
+        <Button
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="."
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btnDot"
+            android:onClick="drawDot"/>
+
+        <Button
+            style="@style/btnStyleGenoa"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btnPlus"
+            android:onClick="drawPlus"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            style="@style/btnStyleSandrift"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CLR"
+            android:textSize="@dimen/sp25"
+            android:id="@+id/btnClr"
+            android:onClick="clearDisplay"/>
+
+        <Button
+            style="@style/btnStyleSandrift"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="DEL"
+            android:textSize="@dimen/sp25"
+            android:id="@+id/btnDel"
+            android:onClick="deleteTop"/>
+
+
+        <Button
+            style="@style/btnStyleOrange"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="="
+            android:textSize="@dimen/sp30"
+            android:id="@+id/btnEqual"
+            android:onClick="findResult"/>
+
+    </LinearLayout>
+
+</LinearLayout>
